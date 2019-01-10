@@ -7,6 +7,7 @@ exports.up = function(knex, Promise) {
     table.boolean("starred");
     table.integer('catches')
     table.string('userComments');
+    table.string("pictureUrl");
     table.integer("user_id")
         .notNullable()
         .references('id')

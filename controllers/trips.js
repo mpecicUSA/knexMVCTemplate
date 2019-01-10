@@ -13,6 +13,7 @@ module.exports = {
             tripDate: req.body.tripDate,
             catches: req.body.catches, 
             userComments: req.body.userComments,
+            pictureUrl: req.body.pictureUrl,
             starred: req.body.starred,
             user_id: 1
             }).then((trips) => {

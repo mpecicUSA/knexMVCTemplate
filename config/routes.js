@@ -8,7 +8,8 @@ module.exports = function(app){
   app.get('/', template.index);
   app.get('/users/:id', users.index);
   app.get('/trips/:user_id', trips.index);
-  app.get('/photos', photos.index)
+  app.get('/photos', photos.index);
 
-  app.post('/add', trips.add)
+  app.post('/add', trips.add);
+  app.post('/add/photos', photos.add)
 }
